@@ -6,148 +6,339 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="285dp"
+               android:src="@drawable/yu">
 
+    </ImageView>
 
     <androidx.appcompat.widget.Toolbar
+            android:id="@+id/actionbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_height="70dp" app:title="Stock Management" app:titleMarginStart="100dp"
+            app:titleTextColor="#FFFFFF" app:subtitleTextColor="#FFFFFF">
 
-            android:background="?attr/colorPrimary"
-            android:theme="?attr/actionBarTheme"
-            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Spinner
+            android:layout_width="150dp"
+            android:background="@drawable/rounded_search"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_height="35dp"
+            android:id="@+id/spinner6"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@+id/spinner6"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_layout"
+
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_search"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp">
+                <TextView
+                        android:text="Fashionable New Jewellery Band Watch for Women  Code:100113"
+                        android:layout_width="166dp"
+                        android:layout_height="52dp" android:id="@+id/textView7" android:layout_marginLeft="105dp"
+                        android:layout_marginTop="10dp"/>
+                <Switch
+                        android:onClick="ShowPopup"
+                        android:id="@+id/switch2"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:switchMinWidth="56dp"
+                        android:layout_below="@+id/switch1"
+                        android:layout_alignLeft="@+id/switch1"
+                        android:layout_marginTop="60dp" android:layout_marginLeft="255dp"/>
+                <ImageView
+                        android:layout_width="99dp"
+                        android:layout_height="68dp"
+                        app:srcCompat="@drawable/oih"
+                        android:id="@+id/imageView21"/>
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView5"
+                        android:layout_marginLeft="275dp" android:layout_marginTop="12dp"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" android:layout_marginTop="93dp">
+                    <EditText android:layout_width="90dp"
+                              android:layout_height="38dp"
+                              android:background="@drawable/rounded"
+                              android:layout_marginLeft="183dp" android:textSize="16sp"
+                              android:text="Pkr"
+                              android:gravity="center" android:textColor="#78BC7B" android:layout_marginTop="1dp">
+
+                    </EditText>
+
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_add_24"
+                            android:id="@+id/imageView13" android:layout_marginLeft="274dp"
+                            tools:ignore="VectorDrawableCompat" android:layout_marginTop="1dp" android:padding="5dp"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_remove_24"
+                            android:id="@+id/imageView17" android:layout_marginTop="1dp"
+                            android:layout_marginLeft="144dp" tools:ignore="VectorDrawableCompat"
+                            android:padding="5dp"/>
+                    <Spinner
+                            android:layout_width="140dp"
+                            android:layout_height="35dp" android:id="@+id/spinner" android:spinnerMode="dropdown"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                        android:text="Out of Stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView17"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="65dp" android:textColor="#473F3F"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="3dp"
+                    android:layout_height="135dp" android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_search"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="442dp">
+                <Switch
+                        android:onClick="ShowPopup"
+                        android:id="@+id/switch6"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:switchMinWidth="56dp"
+                        android:layout_below="@+id/switch1"
+                        android:layout_alignLeft="@+id/switch1"
+                        android:layout_marginTop="60dp" android:layout_marginLeft="255dp"/>
+                <TextView
+                        android:text="Out of Stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView19"
+                        android:layout_marginLeft="180dp" android:layout_marginTop="65dp" android:textColor="#473F3F"/>
+                <TextView
+                        android:text='Wahid Fan Special Standard Pedestal Full Copper 24" White           Code: 201131'
+                        android:layout_width="166dp"
+                        android:layout_height="52dp" android:id="@+id/textView6" android:layout_marginLeft="105dp"
+                />
+                <ImageView
+                        android:layout_width="103dp"
+                        android:layout_height="67dp"
+                        app:srcCompat="@drawable/po" android:id="@+id/imageView24"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" android:layout_marginTop="93dp">
+                    <EditText android:layout_width="90dp"
+                              android:layout_height="38dp"
+                              android:background="@drawable/rounded"
+                              android:layout_marginLeft="183dp" android:textSize="16sp"
+                              android:text="Pkr"
+                              android:gravity="center" android:textColor="#78BC7B" android:layout_marginTop="1dp"
+                              android:id="@+id/editText10">
+
+                    </EditText>
+                    <Spinner
+                            android:layout_width="140dp"
+                            android:layout_height="35dp" android:id="@+id/spinner4"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_add_24"
+                            android:id="@+id/imageView16" android:layout_marginLeft="274dp"
+                            android:layout_marginTop="1dp" tools:ignore="VectorDrawableCompat" android:padding="5dp"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_remove_24"
+                            android:id="@+id/imageView20" android:layout_marginTop="1dp"
+                            android:layout_marginLeft="144dp" tools:ignore="VectorDrawableCompat"
+                            android:padding="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView2"
+                        android:layout_marginLeft="275dp" android:layout_marginTop="12dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp" android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_search"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="155dp">
+                <Switch
+                        android:onClick="ShowPopup"
+                        android:id="@+id/switch5"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:switchMinWidth="56dp"
+                        android:layout_below="@+id/switch1"
+                        android:layout_alignLeft="@+id/switch1"
+                        android:layout_marginTop="60dp" android:layout_marginLeft="255dp"/>
+                <TextView
+                        android:text="Out of Stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView18"
+                        android:layout_marginLeft="180dp" android:layout_marginTop="65dp" android:textColor="#473F3F"/>
+                <TextView
+                        android:text="Pillow Bedding Decorative Square 10 x 18 inch         Code: 10132"
+                        android:layout_width="166dp"
+                        android:layout_height="52dp" android:id="@+id/textView3"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="10dp"/>
+                <ImageView
+                        android:layout_width="97dp"
+                        android:layout_height="79dp" app:srcCompat="@drawable/pp" android:id="@+id/imageView22"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" android:layout_marginTop="93dp">
+                    <EditText android:layout_width="90dp"
+                              android:layout_height="38dp"
+                              android:background="@drawable/rounded"
+                              android:layout_marginLeft="183dp" android:textSize="16sp"
+                              android:text="Pkr"
+                              android:gravity="center" android:textColor="#78BC7B" android:layout_marginTop="1dp"
+                              android:id="@+id/editText2">
+
+                    </EditText>
+                    <Spinner
+                            android:layout_width="140dp"
+                            android:layout_height="35dp" android:id="@+id/spinner2"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_remove_24"
+                            android:id="@+id/imageView18" android:layout_marginTop="1dp"
+                            android:layout_marginLeft="144dp" tools:ignore="VectorDrawableCompat"
+                            android:padding="5dp"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_add_24"
+                            android:id="@+id/imageView14" android:layout_marginLeft="274dp"
+                            android:layout_marginTop="1dp" tools:ignore="VectorDrawableCompat" android:padding="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView4"
+                        android:layout_marginLeft="275dp" android:layout_marginTop="12dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="135dp" android:layout_marginLeft="8dp"
+                    android:background="@drawable/rounded_search"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="298dp">
+                <Switch
+                        android:onClick="ShowPopup"
+                        android:id="@+id/switch4"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:switchMinWidth="56dp"
+                        android:layout_below="@+id/switch1"
+                        android:layout_alignLeft="@+id/switch1"
+                        android:layout_marginTop="60dp" android:layout_marginLeft="255dp"/>
+                <TextView
+                        android:text="Out of Stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView20"
+                        android:layout_marginLeft="180dp" android:layout_marginTop="65dp" android:textColor="#473F3F"/>
+                <TextView
+                        android:text="Ariel Original Detergent Washing Powder, 3Kg Pack Code:103210"
+                        android:layout_width="166dp"
+                        android:layout_height="52dp" android:id="@+id/textView5" android:layout_marginLeft="105dp"
+                        android:layout_marginTop="10dp"/>
+                <ImageView
+                        android:layout_width="99dp"
+                        android:layout_height="72dp"
+                        app:srcCompat="@drawable/kn" android:id="@+id/imageView23"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" android:layout_marginTop="93dp">
+                    <EditText android:layout_width="90dp"
+                              android:layout_height="38dp"
+                              android:background="@drawable/rounded"
+                              android:layout_marginLeft="183dp" android:textSize="16sp"
+                              android:text="Pkr"
+                              android:gravity="center" android:textColor="#78BC7B" android:layout_marginTop="1dp"
+                              android:id="@+id/editText9">
+
+                    </EditText>
+                    <Spinner
+                            android:layout_width="140dp"
+                            android:layout_height="35dp" android:id="@+id/spinner3"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_remove_24"
+                            android:id="@+id/imageView19" android:layout_marginTop="1dp"
+                            android:layout_marginLeft="144dp" tools:ignore="VectorDrawableCompat"
+                            android:padding="5dp"/>
+                    <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="39dp"
+                            android:background="@drawable/rounded"
+                            app:srcCompat="@drawable/ic_baseline_add_24"
+                            android:id="@+id/imageView15" android:layout_marginLeft="274dp"
+                            android:layout_marginTop="1dp" tools:ignore="VectorDrawableCompat" android:padding="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView3"
+                        android:layout_marginLeft="275dp" android:layout_marginTop="12dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+    <SearchView
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_search"
+            android:queryHint="Search by Product"
+            android:iconifiedByDefault="false"
+            android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:layout_marginTop="73dp"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="35dp" android:id="@+id/spinner5" android:layout_marginTop="120dp"
+            android:layout_marginLeft="185dp"
+            android:background="@drawable/rounded_search"/>
     <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="290dp"
-            app:srcCompat="@drawable/hd"
-            android:id="@+id/imageView"/>
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_marginTop="70dp" android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
-
-        <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="110dp" android:layout_marginLeft="8dp"
-                android:background="@drawable/rounded_search"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="460dp">
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_marginTop="70dp">
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_remove_24"
-                        android:id="@+id/imageView20" android:layout_marginTop="8dp"
-                        android:layout_marginLeft="220dp" tools:ignore="VectorDrawableCompat"/>
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_add_24"
-                        android:id="@+id/imageView16" android:layout_marginLeft="330dp"
-                        android:layout_marginTop="7dp" tools:ignore="VectorDrawableCompat"/>
-            </RelativeLayout>
-            <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="30dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView2"
-                    android:layout_marginLeft="320dp" android:layout_marginTop="15dp"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="110dp" android:layout_marginLeft="8dp"
-                android:background="@drawable/rounded_search"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="70dp">
-            <ImageView
-                    android:layout_width="134dp"
-                    android:layout_height="79dp" app:srcCompat="@drawable/pp" android:id="@+id/imageView21"/>
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_marginTop="70dp">
-
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_add_24"
-                        android:id="@+id/imageView13" android:layout_marginLeft="330dp"
-                        android:layout_marginTop="7dp" tools:ignore="VectorDrawableCompat"/>
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_remove_24"
-                        android:id="@+id/imageView17" android:layout_marginTop="8dp"
-                        android:layout_marginLeft="220dp" tools:ignore="VectorDrawableCompat"/>
-            </RelativeLayout>
-            <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView5"
-                    android:layout_marginLeft="320dp" android:layout_marginTop="15dp"/>
-            <TextView
-                    android:text="Fiber Pillow"
-                    android:layout_width="150dp"
-                    android:layout_height="30dp" android:id="@+id/textView3" android:layout_marginLeft="130dp"
-                    android:layout_marginTop="10dp"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="110dp" android:layout_marginLeft="8dp"
-                android:background="@drawable/rounded_search"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="200dp">
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_marginTop="70dp">
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_remove_24"
-                        android:id="@+id/imageView18" android:layout_marginTop="8dp"
-                        android:layout_marginLeft="220dp" tools:ignore="VectorDrawableCompat"/>
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_add_24"
-                        android:id="@+id/imageView14" android:layout_marginLeft="330dp"
-                        android:layout_marginTop="7dp" tools:ignore="VectorDrawableCompat"/>
-            </RelativeLayout>
-            <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView4"
-                    android:layout_marginLeft="320dp" android:layout_marginTop="15dp"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="110dp" android:layout_marginLeft="8dp"
-                android:background="@drawable/rounded_search"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="330dp">
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:layout_marginTop="70dp">
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_remove_24"
-                        android:id="@+id/imageView19" android:layout_marginTop="8dp"
-                        android:layout_marginLeft="220dp" tools:ignore="VectorDrawableCompat"/>
-                <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_baseline_add_24"
-                        android:id="@+id/imageView15" android:layout_marginLeft="330dp"
-                        android:layout_marginTop="7dp" tools:ignore="VectorDrawableCompat"/>
-            </RelativeLayout>
-            <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="25dp" app:srcCompat="@drawable/cv" android:id="@+id/imageView3"
-                    android:layout_marginLeft="320dp" android:layout_marginTop="15dp"/>
-        </androidx.cardview.widget.CardView>
-        <SearchView
-                android:layout_width="match_parent"
-                android:background="@drawable/rounded_search"
-                android:iconifiedByDefault="false"
-                android:queryHint="Enter Stock Name"
-                android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"/>
-    </RelativeLayout>
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            android:id="@+id/imageView8" android:layout_marginTop="20dp" tools:ignore="VectorDrawableCompat"/>
+    <Button
+            android:text="Add Product"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:id="@+id/button6"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="123dp" android:background="@drawable/rounded_search"/>
 </RelativeLayout>

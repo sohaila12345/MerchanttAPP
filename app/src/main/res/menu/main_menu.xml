@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+            android:checkableBehavior="single">
+    </group>
+    <group>
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_baseline_dashboard_24"
+                android:title="Home" />
+        <item
+                android:id="@+id/wallet"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="My profile"
+        />
+        <item
+                android:id="@+id/nav_wallet"
+                android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+                android:title="Wallet" />
+
+        <item
+                android:id="@+id/nav_cycle"
+                android:icon="@drawable/ic_location"
+                android:title="My Address" />
+
+
+        <item
+                android:id="@+id/nav"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="More Setting" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share" />
+
+            <item
+                    android:id="@+id/nav_plane"
+                    android:icon="@drawable/ic_baseline_phone_android_24"
+                    android:title="Contact Us" />
+        </menu>
+    </item>
+    <item android:title="About">
+    </item>
+    <item android:title="Privacy Policy">
+    </item>
+</menu>
