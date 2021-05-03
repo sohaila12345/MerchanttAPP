@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Update_Adress">
+    <SearchView
+            android:layout_width="match_parent"
+            android:queryHint="Search by Product"
+            android:iconifiedByDefault="false"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+    />
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+
+
+    </fragment>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+
+            <TextView
+                    android:text="Area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView9"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="17dp"/>
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="37dp"
+                      android:layout_marginLeft="17dp" android:layout_marginRight="20dp"
+                      android:layout_marginTop="45dp" android:textSize="16sp"
+                      android:textColorHint="#D3CFCF" android:textColor="#3A3030" android:hint="Attock">
+
+            </EditText>
+            <TextView
+                    android:text="Building"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView8"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="88dp"/>
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="40dp" android:layout_marginLeft="17dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="115dp"
+                      android:id="@+id/editText4" android:textSize="16sp"
+                      android:textColorHint="#D3CFCF" android:textColor="#3A3030" android:hint="New Rabi Center">
+
+            </EditText>
+
+            <TextView
+                    android:text="Unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView12"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="160dp"/>
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="37dp" android:layout_marginLeft="17dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="187dp" android:id="@+id/editText3" android:textSize="16sp"
+                      android:textColor="#3A3030" android:hint="Office # 15  2nd Floor"
+                      android:textColorHint="#D3CFCF">
+
+            </EditText>
+            <TextView
+                    android:text="Additional info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView13"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="232dp"/>
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="37dp" android:layout_marginLeft="17dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="259dp" android:id="@+id/editText" android:textSize="16sp"
+                      android:textColor="#3A3030" android:hint="  " android:textColorHint="#D3CFCF">
+
+            </EditText>
+            <Button
+                    android:text="Cancel"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp" android:id="@+id/button1"
+                    android:layout_marginTop="320dp"
+
+                    android:layout_marginLeft="100dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/roundedd" android:layout_marginBottom="20dp"/>
+            <Button
+                    android:text="Save"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp" android:id="@+id/button2"
+                    android:layout_marginTop="320dp"
+
+                    android:layout_marginLeft="180dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/roundedd" android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

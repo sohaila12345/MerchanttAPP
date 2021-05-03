@@ -5,50 +5,25 @@
     </group>
     <group>
         <item
-                android:id="@+id/nav_home"
+                android:id="@+id/nav_Dashboard"
                 android:icon="@drawable/ic_baseline_dashboard_24"
-                android:title="Home" />
+                android:title="Dashboard" />
         <item
-                android:id="@+id/wallet"
+                android:id="@+id/profile"
                 android:icon="@drawable/ic_baseline_person_24"
-                android:title="My profile"
+                android:title="Profile"
         />
         <item
-                android:id="@+id/nav_wallet"
-                android:icon="@drawable/ic_baseline_account_balance_wallet_24"
-                android:title="Wallet" />
-
-        <item
-                android:id="@+id/nav_cycle"
-                android:icon="@drawable/ic_location"
-                android:title="My Address" />
-
-
-        <item
-                android:id="@+id/nav"
+                android:id="@+id/setting"
                 android:icon="@drawable/ic_baseline_settings_24"
-                android:title="More Setting" />
+                android:title="Settings" />
+        <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_power_settings_new_24"
+                android:title="Logout" />
 
 
     </group>
 
-    <item android:title="Communicate">
 
-        <menu>
-
-            <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_baseline_share_24"
-                    android:title="Share" />
-
-            <item
-                    android:id="@+id/nav_plane"
-                    android:icon="@drawable/ic_baseline_phone_android_24"
-                    android:title="Contact Us" />
-        </menu>
-    </item>
-    <item android:title="About">
-    </item>
-    <item android:title="Privacy Policy">
-    </item>
 </menu>

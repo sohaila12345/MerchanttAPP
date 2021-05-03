@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Area">
+
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+
+        <SearchView android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/search"
+                    android:iconifiedByDefault="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:queryHint="Search Location Here"
+                    android:layout_height="35dp"
+                    android:background="@drawable/rounded_layout"
+        ></SearchView>
+    </fragment>
+
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="260dp"
+            >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <TextView
+                android:text="Store Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="17dp"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="37dp"
+                  android:layout_marginLeft="17dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="45dp"
+                  android:textSize="16sp"
+                  android:textColorHint="#D3CFCF"
+                  android:textColor="#3A3030"
+                  android:hint="Store Name">
+
+        </EditText>
+        <TextView
+                android:text="Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="88dp"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_marginLeft="17dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="100dp"
+                  android:id="@+id/areaa"
+                  android:textSize="14sp"
+                  android:textColorHint="#D3CFCF"
+                  android:textColor="#3A3030"
+                  android:hint="Area">
+
+        </EditText>
+
+        <TextView
+                android:text="Building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:layout_marginTop="160dp" android:layout_marginLeft="19dp"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="37dp"
+                  android:layout_marginLeft="17dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="187dp"
+                  android:id="@+id/building"
+                  android:textSize="16sp"
+                  android:textColor="#3A3030"
+                  android:hint=" Building"
+                  android:textColorHint="#D3CFCF">
+
+        </EditText>
+        <TextView
+                android:text="Floor and Unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView13"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="232dp"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="37dp" android:layout_marginLeft="17dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="259dp"
+                  android:id="@+id/floor"
+                  android:textSize="16sp"
+                  android:textColor="#3A3030"
+                  android:hint="Floor and Unit"
+                  android:textColorHint="#D3CFCF">
+
+        </EditText>
+        <Button
+                android:text="Cancel"
+                android:layout_width="65dp"
+                android:layout_height="30dp" android:id="@+id/button1"
+                android:layout_marginTop="320dp"
+
+                android:layout_marginLeft="100dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/roundedd" android:layout_marginBottom="20dp"/>
+        <Button
+                android:text="Save"
+                android:layout_width="65dp"
+                android:layout_height="30dp" android:id="@+id/button2"
+                android:layout_marginTop="320dp"
+
+                android:layout_marginLeft="180dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/roundedd" android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

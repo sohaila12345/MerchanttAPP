@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Confirm_Order">
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="30dip"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Delivery Date"
+                  android:layout_marginTop="20dip"
+                  android:layout_gravity="center"></TextView>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <EditText android:layout_width="230dip"
+                      android:layout_marginTop="10dip"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/design_textview"
+                      android:text="2021-04-05"
+                      android:textAlignment="center"
+                      android:id="@+id/datepikcker"
+                      android:gravity="center_horizontal"
+                      android:drawableRight="@drawable/ic_baseline_date_range_24" >
+
+            </EditText>
+
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Delivery Time"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="10dip"
+        ></TextView>
+
+        <EditText android:layout_width="230dip"
+                  android:layout_marginTop="10dip"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/design_textview"
+                  android:drawableRight="@drawable/ic_baseline_access_time_24"
+                  android:textAlignment="center"
+                  android:gravity="center_horizontal"
+                  android:text="04:00 pm"
+                  android:id="@+id/timepicker"
+
+        >
+
+        </EditText>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Deliver Order With"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="30dip"></TextView>
+        <Button android:layout_width="150dip"
+                android:layout_height="30dip"
+                android:text="MartCart Courier"
+                android:background="@drawable/roundedd"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"></Button>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="24dip"></TextView>
+
+    </LinearLayout>
+</LinearLayout>

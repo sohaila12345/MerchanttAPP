@@ -17,7 +17,9 @@
             android:background="@drawable/border"
 
             android:layout_width="match_parent"
-            android:layout_height="70dp" app:title="New Product" app:titleMarginStart="100dp"
+            android:layout_height="70dp"
+            app:title="New Product"
+            app:titleMarginStart="100dp"
             app:titleTextColor="#FFFFFF">
 
 
@@ -118,7 +120,9 @@
                     <EditText android:layout_width="match_parent"
                               android:layout_height="37dp" android:layout_marginLeft="17dp"
                               android:layout_marginRight="20dp"
-                              android:layout_marginTop="595dp" android:id="@+id/editText5" android:textSize="16sp"
+                              android:layout_marginTop="595dp"
+                              android:id="@+id/editText5"
+                              android:textSize="16sp"
                               android:textColor="#3A3030" android:textColorHint="#D4D8D5" android:hint="Price"
                               android:textColorLink="#D3CFCF">
 
@@ -192,11 +196,12 @@
             </RelativeLayout>
         </ScrollView>
         <ImageView
-                android:layout_width="104dp"
+                android:layout_width="200dp"
                 android:layout_height="78dp"
+
                 app:srcCompat="@drawable/ic_baseline_photo_camera_24"
                 android:id="@+id/imageView12" android:layout_marginTop="10dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="60dp"
                 tools:ignore="VectorDrawableCompat" android:padding="5dp"/>
         <Button
                 android:text="Uplaod Image"

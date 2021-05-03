@@ -10,13 +10,11 @@
 
     <androidx.cardview.widget.CardView
             android:layout_width="300dp"
-            android:layout_height="200dp"
-            app:cardCornerRadius="10dp">
+            android:layout_height="200dp">
         <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                app:cardCornerRadius="10dp"
-                app:cardBackgroundColor="#4B974E">
+                app:cardBackgroundColor="#439747">
             <TextView
                     android:text="Verify Out of Stock"
                     android:layout_width="wrap_content"
@@ -24,7 +22,8 @@
                     android:id="@+id/textView22"
                     android:textSize="18sp"
                     android:layout_marginTop="30dp" android:textStyle="bold" android:textColorLink="#FFFFFF"
-                    android:textColor="#FFFFFF" android:layout_marginLeft="10dp"/>
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="20dp"/>
             <ImageView
                     android:layout_width="50dp"
                     android:layout_height="36dp"
@@ -37,9 +36,11 @@
         <Button
                 android:text="Yes"
                 android:layout_width="wrap_content"
-                android:background="@drawable/rounded_layout"
-                android:layout_height="wrap_content"
-                android:id="@+id/button5" android:layout_marginTop="140dp"
+                android:background="#ffff"
+                android:layout_height="35dp"
+                android:textColor="#439747"
+                android:id="@+id/button5"
+                android:layout_marginTop="140dp"
                 android:layout_marginLeft="50dp"/>
         <TextView
                 android:text="Are you sure you want to update out of stock?"
@@ -49,8 +50,9 @@
         <Button
                 android:text="No"
                 android:layout_width="wrap_content"
-                android:background="@drawable/rounded_layout"
-                android:layout_height="wrap_content"
+             android:background="#ffff"
+                android:layout_height="35dp"
+                android:textColor="#439747"
                 android:id="@+id/button4" android:layout_marginTop="140dp"
                 android:layout_marginLeft="150dp"/>
     </androidx.cardview.widget.CardView>

@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import lecho.lib.hellocharts.model.PieChartData;
+import lecho.lib.hellocharts.model.SliceValue;
+import lecho.lib.hellocharts.view.PieChartView;
 
 
 import java.util.ArrayList;
@@ -21,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         addproduct = (Button)findViewById(R.id.button6);
         back= (ImageView)findViewById(R.id.imageView8);
         back.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
     }
+
+
+
+
     public void ShowPopup(View v){
         ImageView cancel;
         Button button;

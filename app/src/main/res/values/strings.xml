@@ -2,4 +2,5 @@
     <string name="app_name">MerchantApp</string>
     <string name="nav_open">open navigation drawer</string>
     <string name="nav_close">close navigation drawer</string>
+    <string name="map_key">AIzaSyAJJVWN61faTkPfYD1evhGWfeEIEMXToNY</string>
 </resources>

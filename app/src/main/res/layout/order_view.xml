@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:fillViewport="true"
+>
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            app:srcCompat="@drawable/yu"
+            android:id="@+id/imageView11"/>
+
+
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_height="120dp" android:layout_marginTop="10dp" android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp">
+            <TextView
+                    android:text="Category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView54"
+                    android:layout_marginLeft="12dp" android:layout_marginTop="70dp" android:textSize="14sp"/>
+            <TextView
+                    android:text="Jewellery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView55"
+                    android:layout_marginLeft="12dp" android:layout_marginTop="95dp" android:textSize="12sp"/>
+            <TextView
+                    android:text="Item Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView53"
+                    android:layout_marginLeft="87dp" android:layout_marginTop="70dp" android:textSize="14sp"/>
+            <TextView
+                    android:text="Wieght"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView59"
+                    android:layout_marginLeft="165dp" android:layout_marginTop="70dp" android:textSize="14sp"/>
+            <TextView
+                    android:text="1unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView56"
+                    android:layout_marginLeft="165dp" android:layout_marginTop="95dp" android:textSize="12sp"/>
+            <TextView
+                    android:text="230.00Rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView60"
+                    android:layout_marginLeft="87dp" android:layout_marginTop="95dp" android:textSize="12sp"/>
+            <TextView
+                    android:text="Qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView52"
+                    android:layout_marginLeft="220dp" android:layout_marginTop="70dp" android:textSize="14sp"/>
+            <TextView
+                    android:text="x8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView57"
+                    android:layout_marginLeft="220dp" android:layout_marginTop="95dp" android:textSize="12sp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView50" android:layout_marginTop="42dp"
+                    android:layout_marginLeft="90dp" android:text="SKU: S6avFPT5TpiBwzywBcGMCw"
+                    android:textSize="12sp"/>
+            <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="59dp" app:srcCompat="@drawable/oih" android:id="@+id/imageView31"
+                    android:layout_marginTop="7dp" android:layout_marginLeft="10dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView49" android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp" android:text="Clear For Men Shampoo 250ml"
+                    android:textSize="12sp"/>
+            <TextView
+                    android:text="Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView51"
+                    android:layout_marginLeft="260dp" android:layout_marginTop="70dp" android:textSize="14sp"/>
+            <TextView
+                    android:text="200Rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView58"
+                    android:layout_marginLeft="260dp" android:layout_marginTop="95dp" android:textSize="12sp"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+                android:text="Customer Detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView61" android:layout_marginTop="160dp"
+                android:layout_marginLeft="20dp" android:textSize="18sp" android:textStyle="bold"/>
+        <TextView
+                android:text="Total 200Rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView62" android:layout_marginTop="135dp"
+                android:layout_marginLeft="230dp"/>
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent" android:layout_marginTop="200dp" android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            <TextView
+                    android:text="Customer name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView37" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"/>
+            <TextView
+                    android:text="Recipient name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView39" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"/>
+            <TextView
+                    android:text="Phone number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView41" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="85dp"/>
+            <TextView
+                    android:text="Order date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView43" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="120dp"/>
+            <TextView
+                    android:text="Scheduled on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView45" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="155dp"/>
+            <TextView
+                    android:text="Order#"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView47" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="190dp"/>
+            <TextView
+                    android:text="UID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView63" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="225dp"/>
+            <TextView
+                    android:text="Deliver to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView65" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="260dp"/>
+            <TextView
+                    android:text="Trip type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView67" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="310dp"/>
+            <TextView
+                    android:text="Payment method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView69" android:layout_marginLeft="15dp"
+                    android:layout_marginTop="345dp"/>
+            <TextView
+                    android:text="Usman Awan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView38" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="15dp"/>
+            <TextView
+                    android:text="Usman Awan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView40" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="50dp"/>
+            <TextView
+                    android:text="+923239979123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView42" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="85dp"/>
+            <TextView
+                    android:text="Mar 30, 11:15 AM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView44" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="120dp"/>
+            <TextView
+                    android:text="Mar 31, 02:45 PM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView46" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="155dp"/>
+            <TextView
+                    android:text="16797000023"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView48" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="190dp"/>
+            <TextView
+                    android:text="VjiYNCxEQx29R9MsjO7Hng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView64" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="225dp"/>
+            <TextView
+                    android:text="XWX292 Usman Awan, +923239979123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView66" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="260dp"/>
+            <TextView
+                    android:text="Single Trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView68" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="310dp"/>
+            <TextView
+                    android:text="CASH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView70" android:layout_marginLeft="140dp"
+                    android:layout_marginTop="345dp"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+        </ScrollView>
