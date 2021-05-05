@@ -15,7 +15,7 @@
             android:name="com.google.android.gms.maps.SupportMapFragment">
 
         <SearchView android:layout_width="match_parent"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:id="@+id/search"
                     android:iconifiedByDefault="false"
                     android:layout_marginRight="10dp"
@@ -24,7 +24,18 @@
                     android:layout_height="35dp"
                     android:background="@drawable/rounded_layout"
         ></SearchView>
+        <ImageView
+                android:id="@+id/current_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/location"
+                android:layout_marginTop="215dp"
+                android:background="#ffff"
+                android:layout_marginLeft="260dp"
+               />
+
     </fragment>
+
 
 <ScrollView android:layout_width="match_parent"
             android:layout_height="match_parent"

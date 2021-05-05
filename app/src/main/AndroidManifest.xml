@@ -19,10 +19,20 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Search_Area">
+
+        </activity>
         <activity
                 android:name=".Area"
                 android:label="Store Address"
                 android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+
+        </activity>
+        <activity
+                android:name=".ARea_Search"
+                android:label="Store Address"
+                android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+
         </activity>
         <activity android:name=".Sign_Up">
         </activity>
