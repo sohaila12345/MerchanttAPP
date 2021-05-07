@@ -1,5 +1,6 @@
 package com.example.merchantapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -41,6 +42,7 @@ public class dashboardd extends AppCompatActivity implements NavigationView.OnNa
     TextView textView;
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,11 +55,13 @@ public class dashboardd extends AppCompatActivity implements NavigationView.OnNa
         conatct_us = findViewById(R.id.contact_us);
         whatsapp = findViewById(R.id.whatsapp);
         phone = findViewById(R.id.phone);
+
         conatct_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 if (whatsapp.getVisibility()==View.VISIBLE)
 {
+
     whatsapp.setVisibility(View.INVISIBLE);
     phone.setVisibility(View.INVISIBLE);
 }else{
@@ -160,7 +164,7 @@ if (whatsapp.getVisibility()==View.VISIBLE)
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.setting:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new Setting()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new Setting()).addToBackStack(null).commit();
                 break;
             case R.id.profile:
                 Intent it1 = new Intent(dashboardd.this, Sign_Up.class);

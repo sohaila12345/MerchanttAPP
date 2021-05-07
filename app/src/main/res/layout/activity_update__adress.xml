@@ -5,14 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Update_Adress">
-    <SearchView
-            android:layout_width="match_parent"
-            android:queryHint="Search by Product"
-            android:iconifiedByDefault="false"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
-    />
+
 
     <fragment
             android:layout_width="match_parent"
@@ -20,15 +13,25 @@
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment">
 
+        <SearchView android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/search"
+                    android:iconifiedByDefault="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:queryHint="Search Location Here"
+                    android:layout_height="35dp"
+                    android:background="@drawable/rounded_layout"
+        ></SearchView>
 
     </fragment>
     <ScrollView android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="300dp"
     >
         <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-        android:layout_marginTop="300dp">
+                android:layout_height="match_parent">
 
             <TextView
                     android:text="Area"
@@ -38,9 +41,14 @@
                     android:layout_marginTop="17dp"/>
             <EditText android:layout_width="match_parent"
                       android:layout_height="37dp"
-                      android:layout_marginLeft="17dp" android:layout_marginRight="20dp"
-                      android:layout_marginTop="45dp" android:textSize="16sp"
-                      android:textColorHint="#D3CFCF" android:textColor="#3A3030" android:hint="Attock">
+                      android:id="@+id/area"
+                      android:layout_marginLeft="17dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="45dp"
+                      android:textSize="16sp"
+                      android:textColorHint="#D3CFCF"
+                      android:textColor="#3A3030"
+                      android:hint="Area">
 
             </EditText>
             <TextView
@@ -53,8 +61,11 @@
                       android:layout_height="40dp" android:layout_marginLeft="17dp"
                       android:layout_marginRight="20dp"
                       android:layout_marginTop="115dp"
-                      android:id="@+id/editText4" android:textSize="16sp"
-                      android:textColorHint="#D3CFCF" android:textColor="#3A3030" android:hint="New Rabi Center">
+                      android:id="@+id/editText4"
+                      android:textSize="16sp"
+                      android:textColorHint="#D3CFCF"
+                      android:textColor="#3A3030"
+                      android:hint="Building">
 
             </EditText>
 
@@ -68,7 +79,8 @@
                       android:layout_height="37dp" android:layout_marginLeft="17dp"
                       android:layout_marginRight="20dp"
                       android:layout_marginTop="187dp" android:id="@+id/editText3" android:textSize="16sp"
-                      android:textColor="#3A3030" android:hint="Office # 15  2nd Floor"
+                      android:textColor="#3A3030"
+                      android:hint="Unit"
                       android:textColorHint="#D3CFCF">
 
             </EditText>
@@ -82,7 +94,8 @@
                       android:layout_height="37dp" android:layout_marginLeft="17dp"
                       android:layout_marginRight="20dp"
                       android:layout_marginTop="259dp" android:id="@+id/editText" android:textSize="16sp"
-                      android:textColor="#3A3030" android:hint="  " android:textColorHint="#D3CFCF">
+                      android:textColor="#3A3030"
+                      android:hint="Additional Info" android:textColorHint="#D3CFCF">
 
             </EditText>
             <Button

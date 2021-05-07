@@ -2,22 +2,20 @@ package com.example.merchantapp;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.View;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentTransaction;
 
 import java.util.Calendar;
 
 public class Confirm_Order extends AppCompatActivity {
     private static final String TAG= "ConfirmOrder";
-    private EditText datepikcker;
+    private EditText datepicker;
     private EditText timepicker;
     CardView cardView;
     private DatePickerDialog.OnDateSetListener datePickerDialog;
@@ -26,7 +24,7 @@ public class Confirm_Order extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm__order);
-        datepikcker = findViewById(R.id.datepikcker);
+        datepicker = findViewById(R.id.datepikcker);
         timepicker=findViewById(R.id.timepicker);
         timepicker.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,14 +53,7 @@ public class Confirm_Order extends AppCompatActivity {
             }
 
         });
-
-
-
-
-
-
-
-        datepikcker.setOnClickListener(new View.OnClickListener() {
+        datepicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Calendar cal = Calendar.getInstance();
@@ -90,7 +81,7 @@ public class Confirm_Order extends AppCompatActivity {
                 calendar1.set(Calendar.MONTH,month);
                 calendar1.set(Calendar.DAY_OF_MONTH,day);
                 CharSequence charSequence= DateFormat.format("EEEE dd MMM yyy",calendar1);
-                datepikcker.setText(charSequence);
+                datepicker.setText(charSequence);
 
 
               /*  month= month + 1;
